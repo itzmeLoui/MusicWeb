@@ -4,13 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Gallery</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Music Gallery</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">  </head>
 
 <body>
-    <h1>My Music Gallery</h1>
-    <div id="music - list"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <h1>My Music Gallery</h1>
+    </header>
+
+    <main>
+        <section id="featured-albums">
+            <h2>Featured Albums</h2>
+            <div id="music-list" class="album-grid"> </div>
+        </section>
+
+        <section id="new-releases">
+            <h2>New Releases</h2>
+            <div id="new-releases-list" class="album-grid"></div>
+        </section>
+
+        <section id="popular-artists">
+            <h2>Popular Artists</h2>
+            <div id="artist-list" class="artist-grid"></div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Music Gallery</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
