@@ -3,23 +3,24 @@ const musicData = [
     {
         title: "Song 1",
         artist: "Artist 1",
-        cover: "song1 - cover.jpg",
+        cover: "song1-cover.jpg", // Corrected file name
         audio: "song1.mp3"
     },
     {
         title: "Song 2",
         artist: "Artist 2",
-        cover: "song2 - cover.jpg",
+        cover: "song2-cover.jpg", // Corrected file name
         audio: "song2.mp3"
     },
     // Add more songs as needed
 ];
 
-const musicList = document.getElementById('music - list');
+// Get the music list container.  Corrected ID to match HTML.
+const musicList = document.getElementById('music-list');  // Corrected ID
 
 musicData.forEach((music) => {
     const musicItem = document.createElement('div');
-    musicItem.classList.add('music - item');
+    musicItem.classList.add('music-item'); // Added class for styling
 
     const coverImg = document.createElement('img');
     coverImg.src = music.cover;
@@ -33,7 +34,9 @@ musicData.forEach((music) => {
 
     const playButton = document.createElement('button');
     playButton.textContent = 'Play';
-    playButton.addEventListener('click', function () {
+
+    // Event listener for the play button
+    playButton.addEventListener('click', function() {
         const audio = new Audio(music.audio);
         audio.play();
     });
